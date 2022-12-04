@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container"></div>
+        <div class="right-container">
+            <h3 id="clock"></h3>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="login-form">
+                <form class="hidden" id="login-form">
+                    <input required maxlength="15" type="text" placeholder="이름: 김석진 마누라" />
+                    <input class="btn" type="submit" value="들어가자" />
+                </form>
+            </div>
+            <h1 id="greeting" class="hidden"></h1>
+            <div class="todo-form hidden">
+                <form id="todo-form">
+                    <input type="text" placeholder="석진이와 함께 오늘 할 일">
+                </form>
+                <ul id="todo-list"></ul>
+            </div>
+            <!-- <div id="quote">
+                <p></p>   
+                <p></p>   
+            </div> -->
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <!-- <button id="bg-btn">give me color</button> -->
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
